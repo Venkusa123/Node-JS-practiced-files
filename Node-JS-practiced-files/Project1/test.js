@@ -44,4 +44,9 @@ if(fs.existsSync('./check.js')){
         console.log(err);
     })    
     console.log('check file is deleted successfully');
+}else{
+    fs.appendFile('./check.js',"Hello ia m added to check file",()=>{
+        console.log("check file created successfully");
+    });
 }
+//code ends
